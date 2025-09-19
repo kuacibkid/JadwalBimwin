@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Bimbingan Perkawinan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --hijau-tua: #2e7d32;
+            --hijau-muda: #4caf50;
+            --hijau-aksen: #a5d6a7;
+            --bg-color: #e8f5e9;
+            --card-bg: #ffffff;
+            --teks: #333333;
+            --bayangan: rgba(0, 0, 0, 0.1);
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--teks);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+   	    max-width: 1000px;
+    	    width: 90%;
+	    margin: 40px auto;
+    	    padding: 30px;
+            background-color: var(--card-bg);
+            border-radius: 14px;
+            box-shadow: 0 10px 30px var(--bayangan);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px var(--bayangan);
+        }
+        .header {
+            margin-bottom: 25px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--hijau-tua);
+            margin: 0;
+        }
+        .header p {
+            font-size: 1.1rem;
+            color: var(--hijau-muda);
+            margin: 5px 0 0;
+        }
+        .spreadsheet-container {
+            width: 100%;
+            overflow: hidden;
+            border: 2px solid var(--hijau-aksen);
+            border-radius: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Jadwal Bimbingan Perkawinan</h1>
+            <h1>KUA Kecamatan Cibeunying Kidul</h1>
+        </div>
+
+        <div class="spreadsheet-container">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQZD0IiYymfAFuO5EUqMrbUqiWV7s__WXxeyOLTaxQdUkhPZdqj4zkrveCbNOYo9Nm15HMBXKit7sIk/pubhtml?gid=1923103835&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+        </div>
+        
+        <div class="footer">
+            &copy; 2025 Layanan KUA. Hak Cipta Dilindungi.
+        </div>
+    </div>
+
+</body>
+</html>
